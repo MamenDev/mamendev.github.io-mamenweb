@@ -1,0 +1,91 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('fondo4.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;             /* La imagen cubre todo el fondo */
+    background-repeat: no-repeat;       /* No repite la imagen */
+    background-position: center;        /* Centra la imagen */
+    display: flex;
+    flex-direction: column;             /* Organiza los elementos en columna */
+    min-height: 100vh;                  /* La página debe ocupar toda la altura de la pantalla */
+}
+
+header {
+    color: rgb(255, 255, 255);                            /* Color del texto */
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+/* Estilo del Botón */
+.btn-descargar {
+    display: inline-block;
+    margin-top: 15px;  /* Espacio entre el texto y el botón */
+    padding: 10px 20px;  /* Relleno interno del botón */
+    background-color: #33ffa2;  /* Color de fondo del botón */
+    color: black;  /* Color del texto */
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+    font-size: 1rem;  /* Tamaño de la fuente */
+    border-radius: 5px;  /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Transición suave */
+}
+
+.btn-descargar:hover {
+    background-color: #28d18e;  /* Cambio de color cuando se pasa el mouse */
+    transform: translateY(-3px);  /* Efecto de elevación */
+}
+
+
+.content {
+    flex: 1;                                 /* Hace que .content ocupe el espacio restante */
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 30px auto; /* Margen superior y centrar horizontalmente */
+    color: rgb(250, 250, 250); /* Color del texto para el section */
+    text-align: center;
+    display: flex; /* Flexbox para alinear los elementos */
+    justify-content: space-between; /* Espaciado uniforme entre elementos */
+    align-items: center; /* Alineación vertical */
+    width: 80%; /* El ancho del contenedor ocupa el 80% de la pantalla */
+    max-width: 1200px; /* Límite máximo de ancho */
+    gap: 20px; /* Espaciado entre los divs */
+}
+
+.fotopersonal {
+    flex: 0 0 40%; /* Ocupa el 40% del ancho del contenedor */
+    display: flex; /* Flexbox para centrar la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+.fotopersonal img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    max-height: 100%; /* Asegura que la imagen no crezca más allá del div */
+    object-fit: cover; /* Recorta la imagen si es necesario para encajar */
+}
+
+.descripcion {
+    flex: 0 0 60%; /* Ocupa el 60% del ancho del contenedor */
+    color: white; /* Texto blanco */
+    text-align: left; /* Alineación del texto a la izquierda */
+    padding: 20px; /* Espaciado interno */
+}
+
+
+footer {
+    color: rgb(249, 247, 247);                            /* Color del texto */
+    text-align: center;
+    padding: 10px 0;
+}
