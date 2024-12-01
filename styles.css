@@ -1,29 +1,31 @@
-/* styles.css */
+/* Estilo general */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
 
-.hero {
+/* Encabezado */
+.encabezado {
     position: relative;
-    height: 60vh;
+    height: 50vh;
     color: white;
     text-align: center;
     overflow: hidden;
+    
 }
 
-.background-img {
+.imagen-fondo {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ajusta el ancho completo */
     z-index: -1;
 }
 
-.overlay {
+.capa-superpuesta {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
@@ -32,81 +34,100 @@ body {
     justify-content: space-between;
 }
 
-.navbar {
+.barra-navegacion {
     display: flex;
     justify-content: flex-end;
     padding: 10px 20px;
 }
 
-.menu-icon {
+.icono-menu {
     display: flex;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
 }
 
-.menu-icon .line {
+.icono-menu .linea {
     width: 30px;
     height: 3px;
     background-color: white;
 }
 
-.hero-text {
-    margin-top: 10%;
+.texto-encabezado {
+    margin-bottom: 20%; /* Ajuste para que el texto esté más arriba */
+    text-align: center;
 }
 
-.hero-text h1 {
+.texto-encabezado h1 {
     font-size: 3rem;
     margin: 0;
 }
 
-.hero-text p {
+.texto-encabezado p {
     font-size: 1.2rem;
     margin: 10px 0 0;
 }
 
-.welcome {
+/* Contenedor de línea y foto */
+.contenedor-linea {
+    position: relative; /* Posicionar foto sobre línea */
+    text-align: center;
+    
+
+}
+
+/* Línea divisoria */
+.linea-divisoria {
+    width: 100%; /* Ancho completo */
+    height: 20px; /* Grosor */
+    background-color: #FFA07A; /* Color naranja */
+    margin: 0; /* Elimina el margen entre encabezado y otros elementos */
+    padding: 0; /* Elimina el relleno */
+
+}
+
+/* Foto de perfil */
+.foto-perfil {
+    position: absolute; /* Superponer sobre la línea */
+    top: -125px; /* Posición vertical ajustada */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrado preciso */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff; /* Bordes blancos */
+    z-index: 10; /* Asegura que la imagen quede sobre la línea */
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste interno de la imagen */
+}
+
+/* Sección bienvenida */
+.bienvenida {
     text-align: center;
     background-color: #f9f9f9;
     padding: 50px 20px;
+    margin-top: 100px; /* Espacio extra tras la foto */
 }
 
-.profile-pic {
-    margin: 0 auto 20px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 5px solid #efefef;
-}
-
-.profile-pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.welcome h2 {
+.bienvenida h2 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
 }
 
-.welcome p {
+.bienvenida p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 20px;
 }
 
-.signature p {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #888;
-}
-
-.divider {
-    width: 100%; /* Ajusta el ancho de la línea */
-    height: 10px; /* Grosor de la línea */
-    background-color: #FFA07A; /* Naranja clarito */
-    border: none;
+footer {
+    color: rgb(249, 247, 247);                            /* Color del texto */
+    text-align: center;
+    padding: 10px 0;
 }
